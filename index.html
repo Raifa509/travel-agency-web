@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriftAway</title>
+    <!-- fevicon link -->
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=LXGW+Marker+Gothic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-md " id="navbar">
+            <div class="container-fluid">
+                <img src="./media/logo.png" alt="logo" width="70px" height="70px" class="ms-4">
+                <a class="navbar-brand" id="logoname" href="#">DriftAway</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mx-auto">
+                        <ul
+                            class="navbar-nav d-flex flex-md-row flex-column md:align-items-center justify-content-center ms-5 nav">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link " aria-current="page" href="#aboutus">About</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link " aria-current="page" href="#destinations">Destinations</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link " aria-current="page" href="#tour">Tour Packages</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" aria-current="page" href="#faqs">FAQs</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link " aria-current="page" href="#contact-section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ms-auto me-4 "><button class="px-4 py-2 border-0  navbtn" type="submit"><i
+                                class="fa-solid fa-arrow-right me-2"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home -->
+        <section>
+            <div id="home" class="w-100">
+               <div class="home-content">
+                    <h1>Let’s Make Your <br>Escape <span
+                           >Unforgettable</span>
+                    </h1>
+                    <p>Pack your bags, leave the planning to us, and let the journey begin.</p>
+               </div>
+                <img src="./Media/flight_path.png" alt="flight image" id="flight">
+                <img src="./Media/home.png" alt="no image" id="main-home-img">
+
+                <!-- small div -->
+                <div id="small-div">
+                    <div class="row text-center h-100 g-0">
+                        <div class="col-4 d-flex justify-content-center align-items-center p-0">
+                            <p class="w-100 h-100 m-0 d-flex justify-content-center align-items-center flight-div">
+                                Flight</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-center p-0">
+                            <p
+                                class="bg-color w-100 h-100 m-0 d-flex justify-content-center align-items-center hover-div">
+                                Hotel
+                            </p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-center p-0">
+                            <p
+                                class="bg-color w-100 h-100 m-0 d-flex justify-content-center align-items-center hover-div">
+                                Trip
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- search div -->
+                <div class="row py-2 d-md-flex align-items-center justify-content-center" id="search-div1">
+
+                    <div class="row d-md-flex align-items-center" id="search-grid">
+                        <!-- location -->
+                        <div class="col-md-3 col-12 col-class search-item">
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fa-solid fa-location-arrow fa-xl me-2"></i>
+                                <h5>Location</h5>
+                            </div>
+                            <p>Search destinations</p>
+                        </div>
+
+                        <!-- checkin  -->
+                        <div class="col-md-3 col-12 col-class search-item">
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fa-solid fa-calendar-days fa-lg me-2"></i>
+                                <h5>Check in</h5>
+                            </div>
+                            <p>Add Dates</p>
+                        </div>
+
+                        <!-- check out -->
+                        <div class="col-md-3 col-12 col-class search-item">
+                            <div class="d-flex flex-row align-items-center ">
+                                <i class="fa-solid fa-calendar-days fa-lg me-2"></i>
+                                <h5>Check out</h5>
+                            </div>
+                            <p>Add Dates</p>
+                        </div>
+
+                        <!-- guest and search -->
+                        <div class="col-md-3 col-12 col-class search-item">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-solid fa-user-plus fa-lg me-2"></i>
+                                        <h5>Guests</h5>
+                                    </div>
+                                    <p>Add Guests</p>
+                                </div>
+                                <div class="col-md-5 col-12 d-flex justify-content-center align-items-center"
+                                    style="height: 100%;">
+                                    <button class="px-4 py-2 border-0 action-btn">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- destinations -->
+        <section id="destinations">
+            <!-- heading -->
+            <div class="px-3 py-3 text-center ">
+                <h1>Your Destination of <br>Cozy Comfort</h1>
+                <p>Embark on unforgettable journeys with our personalized travel <br>experiences tailored just for you
+                </p>
+            </div>
+            <!-- grid section -->
+            <div class="container px-md-5 py-md-5">
+                <div class="row g-3">
+                    <div class="col-md-6 col-12 img-div-grid ">
+                        <img src="https://img.freepik.com/free-photo/similan-island_1203-6646.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                            alt="no image" width="100%" height="350rem">
+                        <div class="heading-bg-6">
+                            <h5 class="px-4 py-2">Indonesia,Bali</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12  img-div-grid">
+                        <img src="https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            width="100%" height="350rem">
+                        <div class="heading-bg-3">
+                            <h5 class="px-4 py-2">Dubai</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 img-div-grid">
+                        <img src="
+                            https://plus.unsplash.com/premium_photo-1678693021499-c6c5111bbc74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGFpbGFuZHxlbnwwfHwwfHx8MA%3D%3D"
+                            width="100%" height="350rem">
+                        <div class="heading-bg-3">
+                            <h5 class="px-4 py-2">Thailand</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-12 img-div-grid">
+                        <img src="
+                          https://media.assettype.com/outlooktraveller/2024-12-11/3oky4fpi/shutterstock2470480069.jpg"
+                            width="100%" height="350rem">
+                        <div class="heading-bg-3">
+                            <h5 class="px-4 py-2">Morocco</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 img-div-grid">
+                        <img src="
+                          https://img.freepik.com/free-photo/aerial-shot-rice-hills-surrounded-by-greens-trees_181624-29490.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                            width="100%" height="350rem">
+                        <div class="heading-bg-3">
+                            <h5 class="px-4 py-2">Vietnam</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 img-div-grid">
+                        <img src="https://img.freepik.com/premium-photo/hot-air-balloon-flying-rock-landscape-cappadocia-turkey_146671-11525.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                            width="100%" height="350rem">
+                        <div class="heading-bg-6">
+                            <h5 class="px-4 py-2">Turkey</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+
+
+                <!-- tour packages -->
+
+                <section id="tour">
+                    <div class="container">
+                        <h1 class="p-md-4 p-2 text-center mt-md-2 mt-5">Our Most Popular <br>Tour Packages</h1>
+
+                        <div id="carouselExample" class="carousel slide mt-5" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <h4 class="">Best Selling Destinations</h4>
+                                    <div id="hr" class="my-3"></div>
+                                    <div class="row text-center">
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 1 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/tropical-maldives-resort-hotel-island_1339-122965.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class="img-fluid" alt="maldives" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Maldives</h5>
+                                                    <p class="card-text">Starting at ₹69,100 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 2 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/nubra-valley-himalayas-ladakh-india_163782-7435.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class=" img-fluid" alt="Ladakh" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ladakh</h5>
+                                                    <p class="card-text">Starting at ₹24,700 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 3 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/architecture-stockholm-sweden_136401-2534.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class=" img-fluid" alt="europe" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Europe</h5>
+                                                    <p class="card-text">Starting at ₹1,34,200 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 4 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/free-photo/cityscape-singapore-city-skyline_74190-6349.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    alt="singapore" height="100%" class="img-fluid">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Singapore</h5>
+                                                    <p class="card-text">Starting at ₹81,000 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <h4 class="">Visa Free Destinations</h4>
+                                    <div id="hr" class="my-3"></div>
+                                    <div class="row text-center">
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 1 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/free-photo/long-boat-tourist-maya-bay-phi-phi-island-photo-taken-december-1-2016-krabi-thailand_335224-896.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class="img-fluid" alt="thailand" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Thailand</h5>
+                                                    <p class="card-text">Starting at ₹12,200 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 2 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/river-flowing-into-ocean-tropical-island-mauritius_217593-5232.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class="img-fluid" alt=" Mauritius" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Mauritius</h5>
+                                                    <p class="card-text">Starting at ₹41,100 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 3 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/free-photo/tung-bua-tong-mexican-sunflower-field-sunset-mae-hong-son-province-thailand_335224-819.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                     class="img-fluid" alt="bhutan" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Bhutan</h5>
+                                                    <p class="card-text">Starting at ₹26,660 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 4 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/victoria-harbour-hong-kong-china_255175-2261.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    alt="hong kong" height="100%"  class="img-fluid">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hong Kong</h5>
+                                                    <p class="card-text">Starting at ₹20,743 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <h4 class="">International Destinations</h4>
+                                    <div id="hr" class="my-3"></div>
+                                    <div class="row text-center">
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 1 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://media.istockphoto.com/id/1997861274/photo/a-beautiful-sunrise-in-baku.jpg?s=612x612&w=0&k=20&c=-4R2222KTYE_TFW-R8aQEpBbxSxCoJFNAoTjPCnUZkg="
+                                                    class="img-fluid" alt="azerbaijan" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Azerbaijan</h5>
+                                                    <p class="card-text">Starting at ₹40,999 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 2 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/sydney-australia-march-4-2023-sydney-cbd-surrounding-harbour-including-circular-quay-rocks-clear-autumn-day-sydney-australia_1020609-399.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class="img-fluid" alt="australia" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Australia</h5>
+                                                    <p class="card-text">Starting at ₹51,100 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 3 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/premium-photo/yangon-skyline-with-shwedagon-pagoda-myanmar-sunset_255553-1252.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    class="img-fluid" alt="Myanmar" height="100%">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Myanmar</h5>
+                                                    <p class="card-text">Starting at ₹36,050 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-12 text-white p-3">
+                                            <!-- card 4 -->
+                                            <div class="card" style="width: 100%;">
+                                                <img src="https://img.freepik.com/free-photo/breathtaking-view-beautiful-landscape-surrounded-by-mountains-wanaka-town-new-zealand_181624-41030.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740"
+                                                    alt="hong kong" height="100%" class="img-fluid">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">New Zealand</h5>
+                                                    <p class="card-text">Starting at ₹30,743 per person</p>
+                                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+
+
+
+                        </div>
+                </section>
+
+
+                <!-- gallery with about us -->
+
+                <section id="aboutus">
+                    <div class="container">
+                        <div id="about-details">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <h5>ABOUT US</h5>
+                                    <h2>What is <span style="color: #01529d;">DriftAway?</span></h2>
+                                    <div id="hr" class="my-3"></div>
+                                    <p class="py-3">DriftAway is a travel company built on the belief that every journey
+                                        should be
+                                        unforgettable. We specialize in crafting personalized trips that match your
+                                        style, pace, and dreams. Whether you're seeking adventure, relaxation, or
+                                        cultural immersion, we're here to make it effortless. Let DriftAway take care of
+                                        the details — you just enjoy the experience.
+
+                                        With a network of trusted partners around the globe and a deep love for
+                                        exploration, we curate seamless itineraries that bring out the soul of every
+                                        destination. From hidden gems to iconic landmarks, our goal is to help you
+                                        travel meaningfully, comfortably, and confidently — every time.</p>
+                                </div>
+                                <div class="col-md-6 d-none d-md-block">
+                                    <div id="about-img-div">
+                                        <img src="./Media/about.png" alt="" width="110%" id="about-img">
+                                        <div id="circle-div"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </section>
+
+
+                <!-- FAQs -->
+                <section>
+                    <div id="faqs" class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-7 col-12" id="faqs-row">
+                                <h2 class="mb-4 text-center">FAQs</h2>
+                                <div id="accordian-div">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item p-1">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed btn-style" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    What is included in the travel package?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body btn-style">Our travel packages typically
+                                                    include accommodation, local transportation, guided tours, and some
+                                                    meals. Specific inclusions are detailed in each package description.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item p-1">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed btn-style" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Can I customize my travel itinerary?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body btn-style">Absolutely! We offer customizable
+                                                    travel experiences tailored to your preferences — just let us know
+                                                    what you'd like to include.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item p-1">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed btn-style" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    What is your cancellation policy?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body btn-style">Cancellations made 14 days prior
+                                                    to departure are eligible for a full refund. Later cancellations may
+                                                    incur charges. See our cancellation policy page for full details.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item p-1">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed btn-style" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                                                    aria-expanded="false" aria-controls="flush-collapsefour">
+                                                    Is travel insurance included?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body btn-style">Travel insurance is not included
+                                                    by default, but we highly recommend it. You can add it during the
+                                                    booking process.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item p-1">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed btn-style" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsefive"
+                                                    aria-expanded="false" aria-controls="flush-collapsefive">
+                                                    What are the payment options?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapsefive" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body btn-style">We accept all major credit/debit
+                                                    cards, UPI, and bank transfers. Installment options are also
+                                                    available on select packages.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-5 d-none d-md-block " id="faqs-right">
+
+                                <div id="faqs-img1" class="faqs-img"></div>
+                                <div id="faqs-img2" class="faqs-img"></div>
+                                <div id="faqs-img3" class="faqs-img"></div>
+                                <div id="faqs-img4" class="faqs-img"></div>
+                                <div id="faqs-img5" class="faqs-img"></div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!-- contact -->
+                <section id="contact-section" class="py-2 py-md-5 mb-3 mb-md-5">
+                    <div id="contact" class="w-100 container px-0 px-md-4">
+                        <div id="contact-head" class="text-center py-md-5 py-2">
+                            <h2>We're here to help you</h2>
+                            <p>Questions about your trip? Our travel experts are ready to help <br>you plan, book, or
+                                solve anything.</p>
+                        </div>
+                        <div id="contact-outer">
+                            <div class="mx-md-2 mx-0" id="contact-inner">
+                                <div class="shadow p-md-5 p-2 mb-md-5 mb-1 bg-body rounded">
+                                    <div class="row g-md- g-2">
+                                        <div class="col-md-6 col-12">
+                                            <input type="text" placeholder="Name"
+                                                class="w-100 px-3 py-2 input-class rounded">
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <input type="text" placeholder="Email"
+                                                class="w-100 px-3 py-2 input-class rounded">
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <input type="text" placeholder="Phone"
+                                                class="w-100 px-3 py-2 input-class rounded">
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <input type="text" placeholder="Subject"
+                                                class="w-100 px-3 py-2 input-class rounded">
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea name="" id="" placeholder="Message"
+                                                class="w-100 px-3 py-2 input-class rounded"
+                                                style="height: 10rem;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-3 "><button
+                                            class="action-btn px-5 py-2 fs-4">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- footer -->
+                <footer class="text-white py-4" style="background-color: #012039;">
+                    <div class="container">
+                        <div
+                            class="d-flex flex-column flex-md-row align-items-md-start gap-md-5 gap-3 align-items-center justify-content-between">
+
+                            <!-- Logo -->
+                            <div class="d-flex align-items-center me-5">
+                                <img src="./Media/logo.png" alt="Logo" width="40" class="me-2">
+                                <p class="fs-4 mb-0 text-white">DriftAway</p>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="d-flex gap-md-5 gap-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="#navbar" class="text-white text-decoration-none d-block mb-2">Home</a>
+                                    </li>
+                                    <li><a href="#aboutus" class="text-white text-decoration-none d-block mb-2">About
+                                            Us</a>
+                                    </li>
+                                    <li><a href="#destinations"
+                                            class="text-white text-decoration-none d-block mb-2">Destinations</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#tour" class="text-white text-decoration-none d-block mb-2">Tour
+                                            Packages</a></li>
+                                    <li><a href="#faqs" class="text-white text-decoration-none d-block mb-2">FAQs</a>
+                                    </li>
+                                    <li><a href="#contact-section"
+                                            class="text-white text-decoration-none d-block mb-2">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="text-center text-md-start">
+                                <p class="mb-4 text-white">Follow us</p>
+                                <div class="d-flex gap-3">
+                                    <i class="fa-brands fa-instagram fa-xl"></i>
+                                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                    <i class="fa-brands fa-x-twitter fa-xl"></i>
+                                    <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="text-center text-white mb-0 mt-5 " id="footer-p">Copyright © 2025 DriftAway. All
+                            Rights Reserved. Designed by Fathimathul Raifa NP</p>
+                    </div>
+                </footer>
+
+                <!-- last div -->
+
+
+    </div>
+</body>
+
+</html>

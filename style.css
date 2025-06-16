@@ -1,0 +1,649 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+
+
+}
+
+:root {
+    --background-blue: rgb(207, 237, 255);
+    --text-color: #1F1F1F;
+    --link-color: #1c76cb;
+    --link-hover: #2BAFBF;
+    --button-bg: #FFB100;
+    --button-text: #FFFFFF;
+    --section-bg: rgba(41, 173, 255, 0.207);
+    --heading-color: rgb(4, 67, 149);
+    --fs-h1: 44px;
+    --fs-p: 18px;
+    --fs-nav: 17px;
+    --font-body: "Lato", sans-serif;
+    --font-headings: "Quicksand", sans-serif;
+}
+
+#logoname {
+    font-family: var(--font-headings);
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+#navbar {
+    background-color: var(--link-color);
+
+}
+
+.navbar-nav .nav-item a {
+    color: white;
+    font-size: var(--fs-nav);
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.navbtn {
+    background-color: #FFB100;
+    color: white;
+    font-size: var(--fs-nav);
+    font-family: var(--font-body);
+    font-weight: 600;
+    transition: all 0.6s ease;
+
+}
+
+.navbtn:hover {
+    border-radius: 1rem 0rem 1rem 0rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+a::before,
+a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+
+a::before {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+a::after {
+    bottom: 0;
+    right: 0;
+    transform-origin: right;
+}
+
+a:hover::before,
+a:hover::after {
+    transform: scaleX(1);
+}
+
+/* home */
+#home {
+    min-height: 88vh;
+    background-color: var(--background-blue);
+    position: relative;
+
+}
+
+
+#home h1 {
+    padding: 8% 0% 0% 10%;
+    color: #0c0b0b;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: var(--fs-h1);
+    line-height: 1.5;
+}
+
+#home span {
+    color: rgb(4, 67, 149);
+    font-weight: 500;
+    font-size: 42px;
+}
+
+#home p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    font-size: 18px;
+    position: relative;
+}
+#search-div1 {
+    width: 60%;
+    height: 4.5rem;
+    background-color: white;
+    margin-left: 9%;
+
+    position: static !important;
+    margin-top: 0 !important;
+    top: auto !important;
+
+    border-radius: 0rem 1rem 1rem 1rem;
+
+}
+
+.col-class {
+    padding: 0% 4%;
+}
+
+#search-div1 p {
+    color: #0c0b0b67;
+    font-size: 15px;
+}
+
+#small-div {
+    width: 15%;
+    height: 10%;
+    background-color: #ffffff;
+    margin-left: 9%;
+    border-radius: 1rem 1rem 0% 0%;
+    position: absolute;
+    top: 24.7rem;
+}
+
+.bg-color {
+    background-color: rgb(4, 67, 149);
+    color: white;
+}
+
+.action-btn {
+    background-color: #FFB100;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.action-btn:hover {
+    border-radius: 1.5rem;
+}
+
+@media(max-width:768px) {
+    #home {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    #home h1 {
+        font-size: 30px;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    #home span {
+        font-size: 37px;
+    }
+
+    #home p {
+        text-align: justify;
+        padding: 0rem 30px;
+        font-size: 16px;
+    }
+
+    #main-home-img {
+        display: none;
+    }
+
+    #flight {
+        display: none;
+    }
+
+    #small-div {
+        display: none;
+    }
+
+    #search-div1 {
+        width: 90%;
+        height: auto;
+        /* Allow it to grow with content */
+        background-color: white;
+        margin: 2rem auto 0 auto;
+        /* center it and push it down slightly */
+        position: static;
+        /* remove absolute positioning */
+        border-radius: 1rem;
+        padding: 1rem;
+
+    }
+
+    .search-item {
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .navbtn{
+        margin-left: 58px;
+    }
+
+}
+
+#main-home-img {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 51%;
+}
+
+#flight {
+    width: 20%;
+    position: absolute;
+    top: 60px;
+    left: 40rem;
+
+}
+
+
+/* destinations */
+
+#destinations {
+    width: 100%;
+    height: 100vh;
+}
+
+#destinations h1 {
+    font-family: "LXGW Marker Gothic", sans-serif;
+    font-weight: 600;
+    color: #1c76cb;
+}
+
+#destinations p {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+    color: #0c0b0b;
+}
+
+.img-div-grid {
+    position: relative;
+}
+
+.img-div-grid img {
+    border-radius: 2rem 2rem 0rem 0rem;
+
+
+}
+
+.img-div-grid h5 {
+
+    color: white;
+
+}
+
+.heading-bg-6 {
+    width: 97.3%;
+    height: 3rem;
+    position: absolute;
+    border-radius: 1rem 1rem 0rem 0rem;
+    top: 18.9rem;
+    background-color: rgba(0, 0, 0, 0.671);
+
+}
+
+@media(max-width:768px) {
+    .heading-bg-6 {
+        width: 95%;
+
+    }
+}
+
+.heading-bg-3 {
+    width: 95.1%;
+    height: 3rem;
+    position: absolute;
+    border-radius: 1rem 1rem 0rem 0rem;
+    top: 18.9rem;
+    background-color: rgba(0, 0, 0, 0.57);
+
+}
+
+/* tour */
+#tour {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+#tour h1 {
+    font-size: 40px;
+    color: #0259aa;
+    letter-spacing: 0.2rem;
+}
+
+#tour h4 {
+    font-family: "LXGW Marker Gothic", sans-serif;
+    font-size: 27px;
+    color: #04437d;
+}
+
+#hr {
+    width: 15%;
+    height: 0.2rem;
+    background-color: #0263be;
+}
+
+#tour p {
+    color: #0c0b0b86;
+}
+
+#tour h5 {
+    font-family: var(--font-body)
+}
+
+@media(max-width:768px) {
+    #tour h1 {
+        font-size: 30px;
+    }
+}
+
+/* FAQS */
+
+#faqs {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    /* background-color: #00c3ff15; */
+    background-color: #0259aa05;
+
+}
+
+#faqs-row {
+    padding: 2rem 1rem;
+
+}
+
+@media(min-width:768px) {
+    #faqs {
+        height: 108vh;
+        padding: 5rem 1rem 5rem 5rem;
+    }
+
+    #faqs-row {
+        padding: 5rem 0.5rem 5rem 5rem;
+    }
+}
+
+#faqs-row h2 {
+    font-family: "LXGW Marker Gothic", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    color: #04437d;
+}
+
+#accordian-div {
+    border: 2px solid #0263be;
+    padding: 4px;
+    border-radius: 1rem;
+
+}
+
+#accordian-div {
+    box-shadow: 0 2px 10px rgba(49, 150, 244, 0.188);
+}
+
+.btn-style {
+    font-family: var(--font-headings);
+    font-weight: 600;
+    font-size: 17px !important;
+    background-color: #57aeff0c;
+}
+
+#faqs-img1 {
+    width: 14rem;
+    height: 14rem;
+
+    background-image: url("https://img.freepik.com/premium-photo/beautiful-sunset-scenery-hampi-ruins_1048944-17918649.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+#faqs-img2 {
+    width: 10rem;
+    height: 10rem;
+    background-color: #0c0b0b;
+    background-image: url("https://img.freepik.com/premium-photo/rear-view-person-rock-by-sea-against-sky_1048944-5229039.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 19rem;
+    margin-top: -90px;
+}
+
+#faqs-img3 {
+    width: 10rem;
+    height: 10rem;
+    background-color: #0c0b0b;
+    border-radius: 50%;
+    background-color: #0c0b0b;
+    background-image: url("https://img.freepik.com/free-photo/beautiful-girl-red-bikini-boat-koh-kai-island-thailand_335224-1228.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740");
+    background-size: cover;
+    background-position: center;
+    margin-left: 5rem;
+    margin-top: -20px;
+}
+
+#faqs-img4 {
+    width: 11rem;
+    height: 11rem;
+    background-color: #0c0b0b;
+    border-radius: 50%;
+    background-color: #0c0b0b;
+
+    background-image: url("https://img.freepik.com/premium-photo/autumn-morning-mountain-landscape-with-snowy-peaks-bright-trees_290947-475.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740");
+    background-size: cover;
+    background-position: center;
+    margin-left: 18rem;
+    margin-top: -45px;
+}
+
+#faqs-img5 {
+    width: 9.5rem;
+    height: 9.5rem;
+    background-color: #0c0b0b;
+    border-radius: 50%;
+    background-color: #0c0b0b;
+    background-image: url("https://img.freepik.com/premium-photo/architecture-stockholm-sweden_136401-2534.jpg?ga=GA1.1.886037798.1749634259&semt=ais_hybrid&w=740");
+    background-size: cover;
+    background-position: center;
+    margin-left: 0rem;
+    margin-top: -80px;
+}
+
+.faqs-img {
+    transition: all 0.3s ease;
+
+}
+
+.faqs-img:hover {
+    transform: scale(1.05);
+}
+
+/* about */
+
+#about-details {
+    margin-top: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 10rem;
+}
+
+#about-details p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#about-details h5 {
+    color: #0259aa;
+}
+
+@media(max-width : 768px) {
+    #about-details p {
+        text-align: justify;
+    }
+
+    #about-details {
+
+        padding: 0rem 1rem;
+
+    }
+}
+
+#about-img-div {
+    position: absolute;
+    right: 7%;
+    padding-bottom: 8px;
+}
+
+#about-img-div img {
+    margin-top: -98px;
+
+}
+
+#circle-div {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 100%;
+    background-color: #89c4fa;
+    margin-top: -29rem;
+    margin-right: 2rem;
+}
+
+
+#about-grid {
+    display: grid;
+    padding: 0rem 15rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    position: relative;
+    padding-bottom: 8rem;
+
+
+}
+
+#about-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}
+
+#about-img {
+    animation: bounce 4s ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+#text-div {
+    background-color: #0263be;
+    padding-top: 5rem;
+}
+
+#aboutus {
+    position: relative;
+    height: auto;
+}
+
+
+
+/* contact */
+#contact {
+    min-height: auto;
+    margin-bottom: 1rem;
+}
+
+#contact-head h2 {
+    font-family: "LXGW Marker Gothic", sans-serif;
+    font-size: 30px;
+    color: #0259aa;
+}
+
+#contact-head p {
+    font-family: "LXGW Marker Gothic", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#contact-outer {
+    padding: 0rem 2rem;
+}
+
+#contact-inner {
+    padding: 0rem 2rem;
+}
+
+@media(min-width:1200px) {
+    #contact-inner {
+        padding: 0rem 15rem;
+
+    }
+
+    #contact-head h2 {
+        font-size: 35px;
+    }
+
+    #contact-head p {
+        font-size: 20px;
+    }
+
+}
+
+.input-class {
+    border: 2px solid #0259aa50;
+    transition: all 0.3s ease;
+}
+
+/* footer */
+
+#footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #012039;
+    color: white;
+}
+
+#footer-p {
+    font-size: 15px !important;
+}
+
+@media(max-width:768px) {
+    #footer-p {
+        font-size: 13px !important;
+        padding: 0rem 1rem;
+    }
+}

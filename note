@@ -1,0 +1,53 @@
+ <div class="row py-2 d-flex align-items-center justify-content-center" id="search-div1">
+
+                    <div class="row d-flex align-items-center">
+                        <!-- location -->
+                        <div class="col-3 col-class ">
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fa-solid fa-location-arrow fa-xl me-2"></i>
+                                <h5>Location</h5>
+                            </div>
+                            <p>Search destinations</p>
+                        </div>
+
+                        <!-- checkin  -->
+                        <div class="col-3 col-class">
+                            <div class="d-flex flex-row align-items-center">
+                                <i class="fa-solid fa-calendar-days fa-lg me-2"></i>
+                                <h5>Check in</h5>
+                            </div>
+                            <p>Add Dates</p>
+                        </div>
+
+                        <!-- check out -->
+                        <div class="col-3 col-class ">
+                            <div class="d-flex flex-row align-items-center ">
+                                <i class="fa-solid fa-calendar-days fa-lg me-2"></i>
+                                <h5>Check out</h5>
+                            </div>
+                            <p>Add Dates</p>
+                        </div>
+
+                        <!-- guest and search -->
+                        <div class="col-3 col-class ">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa-solid fa-user-plus fa-lg me-2"></i>
+                                        <h5>Guests</h5>
+                                    </div>
+                                    <p>Add Guests</p>
+                                </div>
+                                <div class="col-5 d-flex justify-content-center align-items-center"
+                                    style="height: 100%;">
+                                    <button
+                                        style="border-radius: 0.5rem; background-color: #FFB100; color: white; margin-top: 3px;"
+                                        class="px-4 py-2 border-0">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
